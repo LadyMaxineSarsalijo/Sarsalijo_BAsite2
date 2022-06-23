@@ -25,5 +25,9 @@ $router->put('/books/{id}', 'UserController@update'); // update user
 $router->patch('/books/{id}', 'UserController@update'); // update user 
 $router->delete('/books/{id}', 'UserController@delete'); // delete 
 
-//$router->get('/usersjob', 'UserJobController@index'); 
-//$router->get('/userjob/{id}', 'UserJobController@show'); // get user by id
+$router->get('/authors', 'AuthorController@index'); 
+$router->get('/authors/{id}', 'AuthorController@show'); // get user by id
+$router->post('/authors', 'AuthorController@add');
+$router->put('/authors/{id}', 'AuthorController@update'); // update user
+$router->patch('/authors/{id}', 'AuthorController@update');
+$router->delete('/authors/{id}', 'AuthorController@delete');
